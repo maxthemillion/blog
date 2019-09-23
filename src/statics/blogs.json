@@ -1,0 +1,16 @@
+{
+    "2019": [ {
+        "id": "sandburgen",
+        "date": "March 10, 2019",
+        "title": "Creating a Simple Blog using Vue + Markdown",
+        "description": "Simple and neat way to add a blogging feature to add on your website."
+    },
+    {
+        "id": "geburtstage",
+        "date": "March 10, 2019",
+        "title": "Creating a Simple Blog using Vue + Markdown",
+        "description": "Simple and neat way to add a blogging feature to add on your website."
+    }
+],
+    "stories": [ ]
+  }
