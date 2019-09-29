@@ -7,8 +7,8 @@
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
               {{entry.title}}
-              <span class="subtitle">{{entry.date}}</span>
             </h3>
+            <span class="subtitle">{{entry.date}}</span>
             <p>{{entry.description}}</p>
           </div>
         </div>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import BLOGENTRIES from '@/statics/blogs.json'
+import BLOGENTRIES from '@/statics/blogposts.json'
 export default {
   name: 'home',
   computed: {
@@ -31,6 +31,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.home {
+  text-align: left;
+}
+
+.sections{
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+h2{
+  color:#170099;
+}
+
 h3 {
   margin: 40px 0 0;
 }
