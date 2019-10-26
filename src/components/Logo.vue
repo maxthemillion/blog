@@ -1,10 +1,8 @@
 <template>
-    <div class='wrapper'>
-        <div class='centering'>
-            <router-link :to="{name:'home'}"> 
-                <img alt="Vue logo" src="@/assets/logo.png" style="max-width:150px;max-height:150px;" />
-            </router-link>
-        </div>
+    <div class='wrapper flex-h-v'>
+        <router-link :to="{name:'home'}"> 
+            <img alt="Vue logo" src="@/assets/logo.png" id='logo' />
+        </router-link>
     </div>
 </template>
 
@@ -15,14 +13,11 @@ export default {
 </script>
 
 <style scoped>
-    .wrapper{
-        width:100vw;
+    #logo{
+        max-width:150px;
+        max-height:150px;
+        border-radius:50%
     }
 
-    .centering{
-        width: 150px;
-        text-align: center;
-        margin: 0 auto;
-    }
 </style>
 

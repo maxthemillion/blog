@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="blog">
+    <div class='wrapper flex-h wrap'>
+        <div class="blog content">
             <router-view />
         </div>
 
@@ -39,9 +39,6 @@ body {
 }
 
 .blog {
-  max-width: 500px;
-  margin: 0px auto;
-
   /deep/ {
     h1 {
       font-size: 2rem;
@@ -63,5 +60,8 @@ body {
   width: 98%;
   margin: 20px auto;
   overflow: auto;
+  text-align: center;
 }
+
+
 </style>

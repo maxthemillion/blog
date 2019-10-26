@@ -1,6 +1,6 @@
 <template>
   <div class="bloghome">
-    <div class="sections">
+    <div class="content">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
         <h2 class="center">{{section}}</h2>
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
@@ -31,13 +31,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.home {
+.bloghome {
   text-align: left;
-}
-
-.sections{
-  max-width: 500px;
-  margin: 0px auto;
 }
 
 h2{
@@ -47,6 +42,7 @@ h2{
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -54,8 +50,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>

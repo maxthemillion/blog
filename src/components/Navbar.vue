@@ -1,6 +1,6 @@
 <template>
-    <div class='wrapper'>
-        <div v-for="(link, index) in links" :key="index" class='centering'>
+    <div class='wrapper flex-h-v'>
+        <div v-for="(link, index) in links" :key="index">
             <router-link :to="{name: link.to}">
                 <div class='navbutton'>{{link.label}}</div>
             </router-link>
@@ -34,13 +34,7 @@ export default {
     margin: 0 1em;
   }
 
-  .centering{
-    width:10em;
-    margin: 0 auto;
-  }
-
   .wrapper{
-    width: 100vw;
     height: 3em;
   }
 </style>

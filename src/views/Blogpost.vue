@@ -1,9 +1,10 @@
 <template>
-  <div class="wrapper">
+  <div>
       <router-view />
-
-    <div>
+    <div class='wrapper flex-h'>
+      <div class='content'>
       <router-link :to="{name: 'blog'}" tag="a" class="back">&laquo; Back to blog overview</router-link>
+      </div>
     </div>
   </div>
 </template>

@@ -1,7 +1,8 @@
 <template>
-<div>
-    <h1>HI</h1>
-
+<div class='wrapper flex-h'>
+    <div class='content'>
+        <h1>HI</h1>
+    </div>
 </div>
 </template>
 
@@ -14,6 +15,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
