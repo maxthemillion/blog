@@ -1,16 +1,18 @@
 <template>
   <div>
-    <gallery :images="images" :index="index" @close="index = null"></gallery>
+    <gallery :images="imageURLs" :index="index" @close="index = null"></gallery>
     <div
       class="image"
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
-    ></div>
+      :style="{ backgroundImage: 'url('+getImgUrl(image)+')', width: '300px', height: '300px' }"
+    >
+    </div>
+
   </div>
 </template>
- 
+
 <script>
   import VueGallery from 'vue-gallery';
   
@@ -20,28 +22,39 @@
     },
     data: function () {
       return {
-        index: null
+        index: null,
+        imageURLs: null
       };
     },
- 
+
     components: {
       'gallery': VueGallery
     },
+    methods:{
+      getImgUrl(image) {
+        var images = require.context('@/assets/images/2019/geburtstage', false, /\.png$/)
+        return images('./' + image)
+      }
+    },
+    mounted(){
+      this.imageURLs = this.images.map(this.getImgUrl)
+    }
+
   }
 </script> 
  
 <style scoped>
-  .image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: 1px solid #ebebeb;
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ebebeb;
 
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-    *display: inline;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 </style> 

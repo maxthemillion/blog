@@ -10,14 +10,24 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
   
   const children = BlogEntries[section].map(child => ({
     path: child.id,
-    name: child.id,
-    component: () => import(`@/markdown/${section}/${child.id}.md`),
+    component: () => import('@/components/Blogpostcontent.vue'),
+    props:{
+      images: child.images,
+    },
+    children:[
+      {
+        path: '',
+        name: child.id,
+        component: () => import(`@/markdown/${section}/${child.id}.md`)
+      }
+    ]
     }))
 
   return {
     path: `/${section}`,
     name: section,
     component: () => import('@/views/Blogpost.vue'),
+    props:{test: true},
     children
   }
 })
