@@ -1,5 +1,5 @@
 <template>
-    <div class='wrapper flex-h'>
+    <div class='wrapper flex-h-v'>
         <div class='content'>
             <router-link :to="dir" tag="a" class="back">&laquo; back </router-link>
         </div>
@@ -15,3 +15,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.wrapper{
+    height:3em;
+}
+</style>
+

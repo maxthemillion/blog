@@ -40,6 +40,7 @@ body {
 
 .gallery {
   width: 98%;
+  max-width:800px;
   margin: 20px auto;
   overflow: auto;
   text-align: center;

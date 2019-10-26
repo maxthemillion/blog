@@ -49,7 +49,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   border-radius:2px;
-  margin:0.5px;
+  margin:2px;
 
   display: -moz-inline-stack;
   display: inline-block;

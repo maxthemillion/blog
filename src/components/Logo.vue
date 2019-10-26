@@ -23,8 +23,8 @@ export default {
         opacity:0.8
     }
     .wrapper{
-        margin-top:1em;
-        margin-bottom:3em;
+        margin-top:5em;
+        margin-bottom:2em;
     }
 
 </style>
