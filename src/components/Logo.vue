@@ -19,6 +19,9 @@ export default {
         border-radius:50%
     }
 
+    a:hover{
+        opacity:0.8
+    }
     .wrapper{
         margin-top:1em;
         margin-bottom:3em;

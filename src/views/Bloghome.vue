@@ -38,7 +38,7 @@ h3{
   margin:0
 }
 .entry {
-  margin: 40px 0 0;
+  margin: 1em 0 ;
 }
 
 </style>
