@@ -1,5 +1,5 @@
-# Geburtstage
-## 8. September 2019 - Sagres, Portugal
+## Geburtstage
+##### 8. September 2019 - Sagres, Portugal
 
 Heute morgen rief Deniz auf meinem Handy an, um mir nachträglich zum Geburtstag zu gratulieren. Mein eigener Geburtstag ist mir überhaupt nicht wichtig. Trotzdem macht es mich glücklich, wenn meine alten Freunde an mich denken. Dabei ist es nicht so schlimm, wenn mal einer etwas zu spät dran ist. Wie das wohl mit deinem Geburtstag sein wird? 
 

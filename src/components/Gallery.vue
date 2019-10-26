@@ -57,7 +57,7 @@
   vertical-align: top;
   *display: inline;
 
-  width:250px;
-  height:250px;
+  width:200px;
+  height:200px;
 }
 </style> 

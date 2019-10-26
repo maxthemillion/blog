@@ -1,19 +1,19 @@
 <template>
   <div>
       <router-view />
-    <div class='wrapper flex-h'>
-      <div class='content'>
-      <router-link :to="{name: 'blog'}" tag="a" class="back">&laquo; Back to blog overview</router-link>
-      </div>
-    </div>
+      <Backbutton :dir="'/blog'" />
   </div>
 </template>
 
 <script>
+import Backbutton from '@/components/Backbutton.vue'
 
 export default {
   name: "Blogpost",
   locale: "de",
+  components: {
+    Backbutton
+  }
 };
 </script>
 

@@ -14,9 +14,14 @@ export default {
 
 <style scoped>
     #logo{
-        max-width:150px;
-        max-height:150px;
+        max-width:100px;
+        max-height:100px;
         border-radius:50%
+    }
+
+    .wrapper{
+        margin-top:1em;
+        margin-bottom:3em;
     }
 
 </style>

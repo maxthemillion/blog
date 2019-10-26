@@ -38,24 +38,6 @@ body {
   hyphens: auto;
 }
 
-.blog {
-  /deep/ {
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.2rem;
-      color: #42b883;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      text-align: justify;
-    }
-  }
-}
-
 .gallery {
   width: 98%;
   margin: 20px auto;
