@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+*/assets
+*/markdown
 
 # local env files
 .env.local

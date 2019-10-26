@@ -8,6 +8,7 @@
       @click="index = imageIndex"
       :style="{ backgroundImage: 'url('+getImgUrl(image)+')', width: '300px', height: '300px' }"
     >
+    <p>{{image}}</p>
     </div>
 
   </div>
@@ -32,7 +33,7 @@
     },
     methods:{
       getImgUrl(image) {
-        var images = require.context('@/assets/images/2019/geburtstage', false, /\.png$/)
+        var images = require.context('@/assets/images/', false, /\.png$/)
         return images('./' + image)
       }
     },

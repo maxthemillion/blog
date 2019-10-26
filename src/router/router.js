@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Bloghome from '@/views/Bloghome.vue'
 import Home from '@/views/Home.vue'
 
 Vue.use(Router)
@@ -37,9 +38,14 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/blog',
-      name: 'blog_home',
+      path:'/',
+      name:'home',
       component: Home
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Bloghome
     },
     ...blogRoutes
   ]

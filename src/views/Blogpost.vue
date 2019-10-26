@@ -3,7 +3,7 @@
       <router-view />
 
     <div>
-      <router-link to="/blog" tag="a" class="back">&laquo; Back to blog overview</router-link>
+      <router-link :to="{name: 'blog'}" tag="a" class="back">&laquo; Back to blog overview</router-link>
     </div>
   </div>
 </template>
