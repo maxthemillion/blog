@@ -1,5 +1,5 @@
 <template>
-  <div class="bloghome">
+  <div class="wrapper flex-h">
     <div class="content">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
         <h2 class="center">{{section}}</h2>
@@ -31,24 +31,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.bloghome {
-  text-align: left;
-}
 
-h2{
-  color:#170099;
+h3{
+  margin:0
 }
-
-h3 {
+.entry {
   margin: 40px 0 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
 </style>
