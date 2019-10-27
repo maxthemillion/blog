@@ -31,7 +31,6 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
     path: `/${section}`,
     name: section,
     component: () => import('@/views/Blogpost.vue'),
-    props:{test: true},
     children
   }
 })

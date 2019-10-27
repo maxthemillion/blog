@@ -35,7 +35,6 @@ a {
   width: 100%;
   text-align: center;
   color: white;
-  border-radius: 4px;
 }
 
 .content {
