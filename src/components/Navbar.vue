@@ -15,13 +15,16 @@ export default {
     return {
       links: [
         {
-          label: "home",
-          to: "home"
-        },
-        {
           label: "blog",
           to: "blog"
-        }
+        },
+        {
+          label: 'foto',
+          to:'foto'
+        },
+        { 
+          label: 'data viz', 
+          to:'dataViz'}
       ]
     };
   }

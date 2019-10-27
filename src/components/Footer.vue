@@ -12,7 +12,8 @@ export default {
 
 <style scoped>
 .wrapper{
-    height:6em;
+    height:10vh;
+    min-height:6em;
     justify-content:space-between;
     background:#f1f1f1;
 }
