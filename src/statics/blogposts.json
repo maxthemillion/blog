@@ -5,17 +5,21 @@
             "date": "8. September 2019",
             "title": "Geburtstage",
             "description": "Heute morgen rief Deniz auf meinem Handy an, um mir nachträglich zum Geburtstag zu gratulieren. Mein eigener Geburtstag ist mir überhaupt nicht wichtig. Trotzdem macht es mich glücklich, wenn meine alten Freunde an mich denken. Dabei ist es nicht ...",
-            "ts":["urlaub", "joni"],
+            "ts": [
+                "urlaub",
+                "joni"
+            ],
+            "cat": "privat",
             "images": [
-                "2019_geburtstage_1.jpg", 
-                "2019_geburtstage_2.jpg", 
-                "2019_geburtstage_3.jpg", 
-                "2019_geburtstage_4.jpg", 
-                "2019_geburtstage_5.jpg", 
-                "2019_geburtstage_6.jpg", 
-                "2019_geburtstage_7.jpg", 
-                "2019_geburtstage_8.jpg", 
-                "2019_geburtstage_9.jpg", 
+                "2019_geburtstage_1.jpg",
+                "2019_geburtstage_2.jpg",
+                "2019_geburtstage_3.jpg",
+                "2019_geburtstage_4.jpg",
+                "2019_geburtstage_5.jpg",
+                "2019_geburtstage_6.jpg",
+                "2019_geburtstage_7.jpg",
+                "2019_geburtstage_8.jpg",
+                "2019_geburtstage_9.jpg",
                 "2019_geburtstage_10.jpg"
             ]
         },
@@ -24,10 +28,117 @@
             "date": "7. September 2019",
             "title": "Sandburgen",
             "description": "Der Sand zwischen meinen Fingern fühlt sich weich an. Ich liege auf dem Bauch und grabe mit den Zehen ein Loch in den Boden. Der Atlantik rauscht gleichmäßig. Der Geruch von Meersalz und Sand liegt in der Luft. Ab und zu zieht eine süßliche Wolke ...",
-            "ts":["urlaub", "joni", "strand"],
-            "images": ["2019_sandburgen_1.png", "2019_sandburgen_2.png"]
-
+            "ts": [
+                "urlaub",
+                "joni",
+                "strand"
+            ],
+            "cat": "privat",
+            "images": [
+                "2019_sandburgen_1.png",
+                "2019_sandburgen_2.png"
+            ]
         }
     ],
-    "2018": []
+    "2015": [
+        {
+            "id": "paradies",
+            "date": "29. September 2015",
+            "title": "Zurück im Paradies",
+            "description": "Oh wie ich es genieße, draußen tief einzuatmen, ohne dabei ein schlechtes Gewissen zu haben. Endlich riecht es nicht mehr nach Asche und Sand, verbranntem Plastik, faulen Eiern oder Todeswurst sondern nach Bäumen, nasser Wiese und ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "fazit",
+            "date": "30. August 2015",
+            "title": "China - Ein Fazit",
+            "description": "Im Februar stellte ich meine Füße zum zweiten Mal auf chinesischen Boden. Ich erinnere mich: Vor meiner ersten Reise im März 2014 konnte ich mir nicht im Geringsten vorstellen, einmal für längere Zeit nach China zu gehen. Als ich nach zehn ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },        
+        {
+            "id": "qingdao",
+            "date": "Juni 2015",
+            "title": "Qingdao",
+            "description": "Zwei Eigenschaften haben Qingdao entscheidend geprägt: Die Stadt ist eine ehemalige deutsche Kolonie und sie ist Gründungsort der größten Brauerei der Welt. ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "dalian_ii",
+            "date": "Mai 2015",
+            "title": "Chinakoller",
+            "description": "Im Sommer stinkt Dalian zum Himmel. Temperaturen jenseits 30 Grad, das Meer und tausende von Menschen entfalten hier ihre eigene Duftwolke. Den Flair, den ich bei meinem letzten Besuch noch spürte, konnte ich dieses Mal nicht wiederfinden. Im Gegenteil. Es war einfach nur ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "dalian_i",
+            "date": "31. Mai 2015",
+            "title": "Dalian",
+            "description": "Ich war um das schlechte Wetter in Dalian sehr froh. 10 Grad und Nebel waren zwar nicht gerade angenehm, aber dafür begegneten wir vermutlich nur halb so vielen Menschen, wie bei 30 Grad und Sonnenschein. Nach ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "anshan",
+            "date": "18. Mai 2015",
+            "title": "Anshan",
+            "description": "45 Minuten mit dem Schnellzug von Shenhyang liegt Anshan. Dass die Stadt im Vergleich ein Kuhdorf ist, merkt man daran, dass der Schnellbahnhof eben nur vier Gleise hat und nicht 20. Außerdem stiegen aus dem Zug an diesem frühen Vormittag des 1. Mai nur wenige Menschen ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "dandong",
+            "date": "12. April 2015",
+            "title": "Ostern in Dandong",
+            "description": "Eine Zugfahrt die ist lustig, vor allem für die einzige Gruppe Europäer in einem Zug in China. Zum Glück war das Abteil nur eine Stunde so voll, dass man sich mit Ellenbogen den Weg zur Zugtoilette frei ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "shenyang_downtown",
+            "date": "22. März 2015",
+            "title": "Shenyang Downtown",
+            "description": "In unserer Bude gäbe es noch genügend aufzuräumen. Die Spüle steht voll mit Geschirr. Sonntags wäre dafür eigentlich viel Zeit. Leider kommt seit heute Morgen wieder einmal kein Wasser aus der Leitung. Wasserrohrbruch. ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        },
+        {
+            "id": "shenyang_welcome",
+            "date": "09. März 2015",
+            "title": "Welcome to Shenyang",
+            "description": "Seit mehr als Woche lebe ich nun in China. Seit Tagen grüble ich, worüber ich denn schreiben soll. Zu berichten gäbe es einiges. Allerdings überlasse ich die kritische Berichterstattung lieber anderen. Und kritisch berichten könnte man hier sehr gut. ...",
+            "ts": [
+                "china"
+            ],
+            "cat": "foto",
+            "images": []
+        }
+    ]
 }
