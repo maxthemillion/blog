@@ -1,14 +1,23 @@
 <template>
-    <div class='wrapper flex-h-v'>
-            <div class='content foto'>
-                <div class='centered' id='headline'>
+    <div class='wrapper flex-h'>
+            <div class='content' id='foto'>
+                <div class='centered flex-h-v' id='headline'>
                     <h3>Fotografie</h3>
                 </div>
-                <div class='centered' id='text'>
-                    This is an even longer test.
-                </div>
-                <div class='centered' id='links'>
-                    This is a third test
+                <div class='centered flex-h-v' id='text'>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  </div>
+                <div class='centered full-width flex-h-v' id='links'>  
+                    <div class="grow flex-h-v">            
+                        <router-link :to="{name: 'home'}" class="back">
+                            &laquo; back 
+                        </router-link>
+                    </div>
+                    <div class="grow flex-h-v">
+                        <router-link :to="{name: 'blog'}" class="back">
+                            blog 
+                        </router-link>
+                    </div>
+                    <div class="grow flex-h-v">gallery</div>
                 </div>
             </div>
     </div>
@@ -21,24 +30,45 @@ export default {
 </script>
 
 <style scoped>
-.wrapper{
-    min-height:300px;
+
+/* html tag styles */
+
+h3{
+    margin:0;
 }
+
+/* class styles */
 
 .centered{
     width: 80%;
     margin: 0 auto;
+    flex-grow:1;
+}
+
+.full-width{
+    width:100%;
+    justify-content:space-around;
 }
 
 .content{
     max-width: 400px;
 }
 
-.foto{
+.grow{
+    flex-grow:1;
+    height:100%
+}
+
+.wrapper{
+    min-height:300px;
+}
+
+/* id styles */
+#foto{
+    border-radius:5px;
     background:#00dbc2;
     color: white;
     width:100%;
-    height:100%;
     display:flex;
     flex-direction: column;
     justify-content:space-around;
@@ -46,17 +76,15 @@ export default {
 
 #headline{
     text-align: center;
+    flex-grow:1;
 }
 
-h3{
-    margin:0;
+#links{
+    flex-grow:1;
 }
 
-.text{
-    width:95%;
-    height:95%;
-    margin: auto auto;
+#text{
+    flex-grow: 3;
 }
-
 
 </style>

@@ -4,9 +4,11 @@
         <div class='dist'>
             <h1>I</h1>
         </div>
+        
         <div class='dist'>
             <div class='heart'></div>
         </div>
+
         <router-link :to="'foto'">
             <div class="boldButton dist foto"><h3>Fotografie</h3></div>
         </router-link>
@@ -33,6 +35,7 @@ a {
 
 .boldButton {
   width: 100%;
+  border-radius:5px;
   text-align: center;
   color: white;
 }
