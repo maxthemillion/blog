@@ -2,10 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Bloghome from '@/views/Bloghome.vue'
 import Home from '@/views/Home.vue'
-import DataViz from '@/views/DataViz.vue'
 import Impressum from '@/views/Impressum.vue'
 import About from '@/views/About.vue'
-import Foto from '@/views/Foto.vue'
+import Primer from '@/views/Primer.vue'
 
 Vue.use(Router)
 
@@ -57,12 +56,18 @@ export default new Router({
     {
       path:'/dataViz',
       name:'dataViz',
-      component: DataViz
+      component: Primer,
+      props:{
+        category: 'dataViz'
+      }
     },  
     {
       path:'/foto',
       name:'foto',
-      component: Foto
+      component: Primer,
+      props:{
+        category: 'foto'
+      }
     },
     {
       path: '/blog',

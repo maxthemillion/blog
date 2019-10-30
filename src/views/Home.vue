@@ -1,6 +1,6 @@
 <template>
 <div class='wrapper flex-h'>
-    <div class='content flex-h-v'>
+    <div class='content-narrow flex-h-v flex-column'>
         <div class='dist'>
             <h1>I</h1>
         </div>
@@ -23,15 +23,24 @@
 <script>
 export default {
   name: "home",
-  components: {}
+  components: {},
 };
 </script>
 
 
 <style scoped>
+/* html tag styles */
+
 a {
   width: 100%;
 }
+
+
+h1, h3 {
+  margin: 0 auto;
+}
+
+/* class styles */ 
 
 .boldButton {
   width: 100%;
@@ -42,7 +51,6 @@ a {
 
 .content {
   flex-direction: column;
-  max-width: 400px;
   width: 100%;
 }
 
@@ -58,10 +66,6 @@ a {
 
 .foto {
   background: #00dbc2;
-}
-
-h1, h3 {
-  margin: 0 auto;
 }
 
 .heart {
