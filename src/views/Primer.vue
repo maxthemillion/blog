@@ -30,6 +30,11 @@ export default {
   props: {
     category: String
   },
+  watch: {
+    category: function(){
+      this.setCategory()
+    }
+  },
   data() {
     return {
       foto: {
@@ -47,12 +52,17 @@ export default {
       current: null
     };
   },
-  created: function() {
+  methods:{
+    setCategory: function(){
       if (this.category === "foto"){
           this.current = this.foto
       } else if(this.category === "dataViz"){
           this.current = this.dataViz
       }
+    }
+  },
+  created: function() {
+    this.setCategory()
   }
 };
 </script>
