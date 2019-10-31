@@ -1,7 +1,7 @@
 <template>
     <div class='wrapper flex-h'>
-            <div class='content-narrow' id='foto' :style="{background: this.current.color}">
-                <div class='centered flex-h-v' id='headline'>
+            <div class='content-narrow' id='foto' >
+                <div class='centered flex-h-v' id='headline' :style="{color: this.current.color}">
                     <h3>{{this.current.headline}}</h3>
                 </div>
                 <div class='centered flex-h-v' id='text'>
@@ -98,8 +98,8 @@ h3 {
 
 /* id styles */
 #foto {
+  background: #d3d3d34d;
   border-radius: 5px;
-  color: white;
   width: 100%;
   display: flex;
   flex-direction: column;

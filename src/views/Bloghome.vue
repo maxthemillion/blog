@@ -6,6 +6,7 @@
       <div v-if="!isCatSelected()" class='tag tag-normal'>category-filtering active:</div>
       <div v-if="!isCatSelected()" class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
   </div>  
+
   <div class="wrapper flex-h">
     <div class="content">
       <div v-for="(section, index) in Object.keys(entries).sort(function ( a, b ) { return b - a; })" :key="index" class="group">
@@ -20,13 +21,25 @@
                   {{entry.title}}
                 </router-link>
               </h3>
-              <span class="date">{{entry.date}}</span>
-              <div class="tags">
-                <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
-                  {{'#'+tag}}
+              <div class="flex-h-v">
+                <div class="date">{{entry.date}}</div>
+                  <div class="tags">
+                    <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
+                      {{'#'+tag}}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <p>{{entry.description}}</p>
+
+                <div class='flex-h-v column' id='content-wrapper'>
+                  <div 
+                    class='img-preview' 
+                    v-if="isImageDefined(entry.images[0])" 
+                    :style="{ backgroundImage: 'url('+getImgUrl(entry.images[0])+')'}">
+                  </div>
+                  <div class='entry-desc'>
+                    {{entry.description}}
+                  </div> 
+                </div>
             </div>
           </div>
         </div>
@@ -46,8 +59,9 @@ export default {
       catSelected: "",
       colorDict: {
         foto: "#00dbc2",
-        dataViz: "#0000c9",
-      }
+        dataViz: "#0000c9"
+      },
+      imageURLs: null
     };
   },
   methods: {
@@ -83,6 +97,15 @@ export default {
     },
     getCatColor(cat) {
       return this.colorDict[cat];
+    },
+    getImgUrl(image) {
+      if (this.isImageDefined(image)) {
+        var images = require.context("@/assets/images/", false, /\.jpg$/);
+        return images("./" + image);
+      }
+    },
+    isImageDefined(image){
+      return (typeof image !== "undefined")
     }
   },
   computed: {
@@ -98,7 +121,7 @@ export default {
 .cat {
   margin-right: 1em;
   flex: 0 0 4px;
-  cursor:pointer;
+  cursor: pointer;
   border-bottom: 1em solid white;
 }
 
@@ -114,9 +137,26 @@ h3 {
   margin: 1em 0;
 }
 
+.entry-desc {
+  flex: 3 1 0;
+  align-items: top;
+  padding:1em;
+  min-width:200px;
+}
+
 .entry-wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.img-preview {
+  flex: 4 1 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px 1px 1px 5px;
+  min-height: 200px;
+  min-width:200px;
 }
 
 .sticky {
@@ -127,7 +167,7 @@ h3 {
 }
 
 .tags {
-  margin: 0.5em 0;
+  margin: 0 1em;
   display: flex;
   justify-content: left;
 }
@@ -154,5 +194,13 @@ h3 {
 .tag-highlight {
   border: 1px solid #0e84ff;
   color: #0e84ff;
+}
+
+#content-wrapper {
+  border-radius:5px;
+  align-items: stretch;
+  margin-top: 5px;
+  background: #d3d3d34d;
+  flex-wrap:wrap;
 }
 </style>

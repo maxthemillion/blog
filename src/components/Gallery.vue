@@ -26,7 +26,6 @@
         imageURLs: null
       };
     },
-
     components: {
       'gallery': VueGallery
     },
@@ -58,5 +57,11 @@
 
   width:200px;
   height:200px;
+
+  cursor:pointer;
+}
+
+.image:hover{
+  opacity:0.8;
 }
 </style> 
