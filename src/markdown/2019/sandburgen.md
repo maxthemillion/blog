@@ -24,4 +24,11 @@ Wir packen unseren Wassermelonenschirm ein, den Nina unbeabsichtigt gekauft hat,
 
 Wir essen Scampi in der Strandbar. Neben uns sitzt eine junge Familie mit ihren Kindern Moritz und Clara. Clara nervt. Moritz bockt. Die Mama ist sehr besorgt, der Papa stumm. Ich solle aufhören, die vier zu beobachten, ermahnt mich Nina. Offensichtlich erkennt man an meinem Gesichtsausdruck, was ich von den Chaos halte. Auf der Fahrt zurück diskutieren wir über Erziehung und Werte. Beim Essen wird nicht gehampelt, sind wir uns einig. Mal sehen, ob du das mitmachst. Erstaunlich ist, wie weit wir in die Zukunft denken, seit wir von dir wissen. Vorher haben wir maximal den nächsten Urlaub geplant. Jetzt sprechen wir über Dinge, die wir entscheiden müssen, wenn du 15 bist. 
 
+<div id="vis"></div>
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/maxthemillion/altairHorizon/master/horizon_chart.json";
+  vegaEmbed('#vis', spec).then(function(result) {
+  }).catch(console.error);
+</script>
+
 Abends im Hotel googeln wir, wie groß du jetzt bist. Das Internet sagt, im Durchschnitt sind Babys in der 21. Woche vom Scheitel bis zur Ferse etwa 26cm groß. Es fällt mir schwer, mir unter diesen Zahlen einen Menschen vorzustellen. Ich denke, Du bist jetzt zusammengerollt und gut eingepackt in Ninas Bauch vielleicht so groß, wie eine kleine Ananas. Vielleicht etwas größer oder kleiner, aber der Gedanke gefällt mir gut.
