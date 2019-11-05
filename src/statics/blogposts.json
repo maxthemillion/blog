@@ -1,6 +1,20 @@
 {
     "2019": [
         {
+            "id": "horizonChart",
+            "date": "05. November 2019",
+            "title": "Horizon Charts",
+            "description": "Welcome to the new Data Viz category on my blog. As data visualization and analysis has - next to photography - become one of my key interests, I am going to post everything that I come across and that relates to the topic here. So let's jump right in! First Episode: Spaghetti vs. horizon charts!",
+            "ts": [
+                "altair",
+                "horizon chart"
+            ],
+            "cat": "dataViz",
+            "images": [
+                "2019_horizonChart.png"
+            ]
+        },
+        {
             "id": "geburtstage",
             "date": "8. September 2019",
             "title": "Geburtstage",

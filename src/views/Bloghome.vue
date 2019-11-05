@@ -100,7 +100,7 @@ export default {
     },
     getImgUrl(image) {
       if (this.isImageDefined(image)) {
-        var images = require.context("@/assets/images/", false, /\.jpg$/);
+        var images = require.context("@/assets/images/", false, /\.(jpg|png)$/);
         return images("./" + image);
       }
     },
@@ -142,6 +142,10 @@ h3 {
   align-items: top;
   padding:1em;
   min-width:200px;
+  border: #d3d3d34d 1px solid;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background: #d3d3d317;
 }
 
 .entry-wrapper {
@@ -157,6 +161,7 @@ h3 {
   border-radius: 5px 1px 1px 5px;
   min-height: 200px;
   min-width:200px;
+  background-color: white;
 }
 
 .sticky {
@@ -200,7 +205,6 @@ h3 {
   border-radius:5px;
   align-items: stretch;
   margin-top: 5px;
-  background: #d3d3d34d;
   flex-wrap:wrap;
 }
 </style>
