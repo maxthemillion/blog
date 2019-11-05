@@ -31,7 +31,7 @@
     },
     methods:{
       getImgUrl(image) {
-        var images = require.context('@/assets/images/', false, /\.jpg$/)
+        var images = require.context('@/assets/images/', false, /\.(jpg|png)$/)
         return images('./' + image)
       }
     },
