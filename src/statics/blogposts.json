@@ -14,45 +14,6 @@
             "images": [
                 "2019_horizonChart.png"
             ]
-        },
-        {
-            "id": "geburtstage",
-            "date": "8. September 2019",
-            "title": "Geburtstage",
-            "description": "Heute morgen rief Deniz auf meinem Handy an, um mir nachträglich zum Geburtstag zu gratulieren. Mein eigener Geburtstag ist mir überhaupt nicht wichtig. Trotzdem macht es mich glücklich, wenn meine alten Freunde an mich denken. Dabei ist es nicht ...",
-            "ts": [
-                "urlaub",
-                "joni"
-            ],
-            "cat": "privat",
-            "images": [
-                "2019_geburtstage_1.jpg",
-                "2019_geburtstage_2.jpg",
-                "2019_geburtstage_3.jpg",
-                "2019_geburtstage_4.jpg",
-                "2019_geburtstage_5.jpg",
-                "2019_geburtstage_6.jpg",
-                "2019_geburtstage_7.jpg",
-                "2019_geburtstage_8.jpg",
-                "2019_geburtstage_9.jpg",
-                "2019_geburtstage_10.jpg"
-            ]
-        },
-        {
-            "id": "sandburgen",
-            "date": "7. September 2019",
-            "title": "Sandburgen",
-            "description": "Der Sand zwischen meinen Fingern fühlt sich weich an. Ich liege auf dem Bauch und grabe mit den Zehen ein Loch in den Boden. Der Atlantik rauscht gleichmäßig. Der Geruch von Meersalz und Sand liegt in der Luft. Ab und zu zieht eine süßliche Wolke ...",
-            "ts": [
-                "urlaub",
-                "joni",
-                "strand"
-            ],
-            "cat": "privat",
-            "images": [
-                "2019_sandburgen_1.jpg",
-                "2019_sandburgen_2.jpg"
-            ]
         }
     ],
     "2015": [

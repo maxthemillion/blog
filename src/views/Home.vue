@@ -1,14 +1,15 @@
 <template>
 <div class='wrapper flex-h'>
-    <div class='content-narrow flex-h-v flex-column'>
+    <div class='content-narrow flex-v flex-column align'>
         <div class='dist'>
-            <h1>I</h1>
+            <h1>Hi! I am Max. I ...</h1>
         </div>
         
         <div class='dist'>
             <div class='heart'></div>
         </div>
 
+        <div class='button-wrapper'>
         <router-link :to="'foto'">
             <div class="boldButton dist foto"><h3>Fotografie</h3></div>
         </router-link>
@@ -16,6 +17,7 @@
         <router-link :to="'dataViz'">
             <div class="boldButton dist data"><h3>Data Viz</h3></div>
         </router-link>
+        </div>
     </div>
 </div>
 </template>
@@ -42,11 +44,19 @@ h1, h3 {
 
 /* class styles */ 
 
+.align{
+    justify-content: space-around;
+    }
+
 .boldButton {
   width: 100%;
   border-radius:5px;
   text-align: center;
   color: white;
+}
+
+.button-wrapper{
+  width:100%;
 }
 
 .content {

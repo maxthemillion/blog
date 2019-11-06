@@ -13,12 +13,11 @@
                             &laquo; back 
                         </router-link>
                     </div>
-                    <div class="grow flex-h-v">
-                        <router-link :to="{name: 'blog'}" class="back">
+                        <router-link :to="{name: 'blog', params: {catSelected: current.catSelected}}" class="forward grow flex-h-v">
+                           <div>
                             blog 
+                          </div>
                         </router-link>
-                    </div>
-                    <div class="grow flex-h-v">gallery</div>
                 </div>
             </div>
     </div>
@@ -31,38 +30,40 @@ export default {
     category: String
   },
   watch: {
-    category: function(){
-      this.setCategory()
+    category: function() {
+      this.setCategory();
     }
   },
   data() {
     return {
       foto: {
-        headline: "Fotografie",
+        headline: "Photography",
         text:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        color: "#00dbc2"
+        color: "#00dbc2",
+        catSelected: "foto"
       },
       dataViz: {
         headline: "Data Viz",
         text:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        color: "#0000c9"
+        color: "#0000c9",
+        catSelected: "dataViz"
       },
       current: null
     };
   },
-  methods:{
-    setCategory: function(){
-      if (this.category === "foto"){
-          this.current = this.foto
-      } else if(this.category === "dataViz"){
-          this.current = this.dataViz
+  methods: {
+    setCategory: function() {
+      if (this.category === "foto") {
+        this.current = this.foto;
+      } else if (this.category === "dataViz") {
+        this.current = this.dataViz;
       }
     }
   },
   created: function() {
-    this.setCategory()
+    this.setCategory();
   }
 };
 </script>
