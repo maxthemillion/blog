@@ -30,12 +30,14 @@
                   </div>
                 </div>
 
-                <div class='flex-h-v column' id='content-wrapper'>
+                <div class='flex-v flex-column' id='content-wrapper'>
+                  <router-link :to="{name: entry.id}">
                   <div 
                     class='img-preview' 
                     v-if="isImageDefined(entry.images[0])" 
                     :style="{ backgroundImage: 'url('+getImgUrl(entry.images[0])+')'}">
                   </div>
+                  </router-link>
                   <div class='entry-desc'>
                     {{entry.description}}
                   </div> 
@@ -53,10 +55,12 @@
 import BLOGENTRIES from "@/statics/blogposts.json";
 export default {
   name: "bloghome",
+  props: {
+      catSelected: String,
+  },
   data: function() {
     return {
       tagSelected: "",
-      catSelected: "",
       colorDict: {
         foto: "#00dbc2",
         dataViz: "#0000c9"
@@ -118,6 +122,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+h3 {
+  margin: 0;
+}
+
+
 .cat {
   margin-right: 1em;
   flex: 0 0 4px;
@@ -128,11 +138,9 @@ export default {
 .date {
   font-size: 0.8em;
   font-weight: 500;
+  text-align: left;
 }
 
-h3 {
-  margin: 0;
-}
 .entry {
   margin: 1em 0;
 }
@@ -143,8 +151,7 @@ h3 {
   padding:1em;
   min-width:200px;
   border: #d3d3d34d 1px solid;
-  border-left: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0px 5px 5px;
   background: #d3d3d317;
 }
 
@@ -158,7 +165,9 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 5px 1px 1px 5px;
+  border: #d3d3d34d 1px solid;
+  border-bottom: none;
+  border-radius: 5px 5px 1px 1px;
   min-height: 200px;
   min-width:200px;
   background-color: white;
@@ -175,6 +184,7 @@ h3 {
   margin: 0 1em;
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -183,7 +193,7 @@ h3 {
   border-radius: 0.4em;
   font-size: 0.7em;
   font-style: italic;
-  margin-right: 0.5em;
+  margin: 0 0.5em 0 0;
   cursor: pointer;
   background: white;
 }

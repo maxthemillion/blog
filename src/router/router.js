@@ -70,9 +70,10 @@ export default new Router({
       }
     },
     {
-      path: '/blog',
+      path: '/blog/:catSelected',
       name: 'blog',
-      component: Bloghome
+      component: Bloghome, 
+      props: true
     },
     ...blogRoutes
   ]

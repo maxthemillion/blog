@@ -1,8 +1,8 @@
 <template>
     <div class='wrapper flex-h-v sticky'>
         <div v-for="(link, index) in links" :key="index">
-            <router-link :to="{name: link.to}">
-                <div class='navbutton'>{{link.label}}</div>
+            <router-link :to="{name: link.to, params:{catSelected: link.catSelected }}">
+                <div class='navbutton' >{{link.label}}</div>
             </router-link>
         </div>
     </div>
@@ -15,19 +15,23 @@ export default {
     return {
       links: [
         {
-          label: "blog",
-          to: "blog"
+          label: "all",
+          to: "blog",
+          catSelected: ""
         },
         {
           label: 'foto',
-          to:'foto'
+          to:'blog',
+          catSelected: "foto"
         },
         { 
           label: 'data viz', 
-          to:'dataViz'}
+          to:'blog',
+          catSelected: "dataViz"
+          }
       ]
     };
-  }
+  },
 };
 </script>
 
