@@ -2,9 +2,9 @@
     <div class='wrapper flex-h'>
             <div class='content-narrow' id='foto' >
                 <div class='centered flex-h-v' id='headline' :style="{color: this.current.color}">
-                    <h3>{{this.current.headline}}</h3>
+                    {{this.current.headline}}
                 </div>
-                <div class='centered flex-h-v' id='text'>
+                <div class='centered flex-h-v' id='text' lang='de'>
                     {{this.current.text}}
                 </div>    
                 <div class='centered full-width flex-h-v' id='links'>  
@@ -13,11 +13,14 @@
                             &laquo; back 
                         </router-link>
                     </div>
-                        <router-link :to="{name: 'blog', params: {catSelected: current.catSelected}}" class="forward grow flex-h-v">
-                           <div>
-                            blog 
-                          </div>
+                    <div>
+                        <router-link :to="{name: 'blog', params: {catSelected: current.catSelected}}" class="forward grow flex-h-v">       
+                            Gallery 
                         </router-link>
+                    </div>
+                    <div class='grow flex-h-v'>
+                      Kontakt
+                    </div>
                 </div>
             </div>
     </div>
@@ -39,14 +42,14 @@ export default {
       foto: {
         headline: "Photography",
         text:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "Ich fotografiere Hochzeiten auf selbstständiger Basis. Bei meinen Hochzeitsreportagen ist mir eine ehrliche, gefühlvolle Bildsprache und eine sehr persönliche Beziehung zu meinen Hochzeitspaaren sehr wichtig.",
         color: "#00dbc2",
         catSelected: "foto"
       },
       dataViz: {
         headline: "Data Viz",
         text:
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "Ich visualisiere Daten in statischen Diagrammen und interaktiven Web Applications. Mich fasziniert dabei besonders die Ästhetik der Darstellungsformen und die Fokussierung auf das Relevante.",
         color: "#0000c9",
         catSelected: "dataViz"
       },
@@ -69,12 +72,6 @@ export default {
 </script>
 
 <style scoped>
-/* html tag styles */
-
-h3 {
-  margin: 0;
-}
-
 /* class styles */
 
 .centered {
@@ -108,6 +105,9 @@ h3 {
 }
 
 #headline {
+  font-weight:400;
+  font-size:1.75em;
+  font-family:'Raleway';
   text-align: center;
   flex-grow: 1;
 }
@@ -117,6 +117,8 @@ h3 {
 }
 
 #text {
-  flex-grow: 3;
+  flex-grow: 1;
+  text-align: left;
+  hyphens: auto;
 }
 </style>

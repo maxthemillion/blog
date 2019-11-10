@@ -1,57 +1,57 @@
 <template>
   <div>
-  <div class="sticky wrapper flex-v flex-column" v-if="!isTagSelected() || !isCatSelected()">
-    <div v-if="!isTagSelected()" class='flex-h filter-row'>
-      <div class='tag tag-normal'>tag filter:</div>
-      <div class="tag tag-highlight" @click="resetTagSelection()">{{'#'+this.tagSelected + ' x'}}</div>
-    </div>
-  <div v-if="!isCatSelected()" :style="{background: getCatColor(catSelected)}" class='flex-h filter-row'>
-      <div class='tag tag-normal'>category filter:</div>
-      <div  class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
-  </div> 
-</div>  
+    <div class="sticky wrapper flex-v flex-column" v-if="!isTagSelected() || !isCatSelected()">
+      <div v-if="!isCatSelected()" :style="{background: getCatColor(catSelected)}" class='flex-h filter-row'>
+          <div class='tag tag-normal'>category filter:</div>
+          <div  class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
+      </div> 
+      <div v-if="!isTagSelected()" class='flex-h filter-row'>
+        <div class='tag tag-normal'>tag filter:</div>
+        <div class="tag tag-highlight" @click="resetTagSelection()">{{'#'+this.tagSelected + ' x'}}</div>
+      </div>
+    </div>  
 
-  <div class="wrapper flex-h">
-    <div class="content">
-      <div v-for="(section, index) in Object.keys(entries).sort(function ( a, b ) { return b - a; })" :key="index" class="group">
-        <h2 class="center">{{section}}</h2>
-        <div v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry-wrapper" v-if="display(entry.ts, entry.cat)">
-            <div class="cat" :style="{background: getCatColor(entry.cat)}" @click="setCatSelected(entry.cat)">
-            </div>
-            <div class="entry">
-              <h3 class="entry-title">
-                <router-link :to="{name: entry.id}">
-                  {{entry.title}}
-                </router-link>
-              </h3>
-              <div class="entry-subtitle flex-h flex-wrap">
-                <div class="date">{{entry.date}}</div>
-                  <div class="tags flex-h-v flex-wrap">
-                    <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
-                      {{'#'+tag}}
+    <div class="wrapper flex-h">
+      <div class="content">
+        <div v-for="(section, index) in Object.keys(entries).sort(function ( a, b ) { return b - a; })" :key="index" class="group">
+          <h2 class="center">{{section}}</h2>
+          <div v-for="entry in entries[section]" :key="entry.id">
+            <div class="entry-wrapper" v-if="display(entry.ts, entry.cat)">
+              <div class="cat" :style="{background: getCatColor(entry.cat)}" @click="setCatSelected(entry.cat)">
+              </div>
+              <div class="entry">
+                <h3 class="entry-title">
+                  <router-link :to="{name: entry.id}">
+                    {{entry.title}}
+                  </router-link>
+                </h3>
+                <div class="entry-subtitle flex-h flex-wrap">
+                  <div class="date">{{entry.date}}</div>
+                    <div class="tags flex-h-v flex-wrap">
+                      <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
+                        {{'#'+tag}}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class='flex-v flex-column' id='content-wrapper'>
-                  <router-link :to="{name: entry.id}">
-                  <div 
-                    class='img-preview' 
-                    v-if="isImageDefined(entry.images[0])" 
-                    :style="{ backgroundImage: 'url('+getImgUrl(entry.images[0])+')'}">
+                  <div class='flex-v flex-column' id='content-wrapper'>
+                    <router-link :to="{name: entry.id}">
+                    <div 
+                      class='img-preview' 
+                      v-if="isImageDefined(entry.images[0])" 
+                      :style="{ backgroundImage: 'url('+getImgUrl(entry.images[0])+')'}">
+                    </div>
+                    </router-link>
+                    <div class='entry-desc'>
+                      {{entry.description}}
+                    </div> 
                   </div>
-                  </router-link>
-                  <div class='entry-desc'>
-                    {{entry.description}}
-                  </div> 
-                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 

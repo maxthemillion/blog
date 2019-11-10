@@ -15,9 +15,8 @@ export default {
     return {
       links: [
         {
-          label: "all",
-          to: "blog",
-          catSelected: ""
+          label: "home",
+          to: "home"
         },
         {
           label: 'foto',
@@ -28,7 +27,11 @@ export default {
           label: 'data viz', 
           to:'blog',
           catSelected: "dataViz"
-          }
+        },
+        {
+          label: 'about', 
+          to:'about'
+        } 
       ]
     };
   },
