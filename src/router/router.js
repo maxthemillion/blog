@@ -5,6 +5,7 @@ import Home from '@/views/Home.vue'
 import Impressum from '@/views/Impressum.vue'
 import About from '@/views/About.vue'
 import Primer from '@/views/Primer.vue'
+import pageNotFound from '@/views/pageNotFound.vue'
 
 Vue.use(Router)
 
@@ -35,7 +36,7 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
 })
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -75,6 +76,11 @@ export default new Router({
       component: Bloghome, 
       props: true
     },
-    ...blogRoutes
+    ...blogRoutes,
+    {
+      path: '*',
+      name: 'notFound',
+      component: pageNotFound
+    }
   ]
 })

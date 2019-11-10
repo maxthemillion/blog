@@ -2,29 +2,16 @@
 <div class='wrapper flex-h'>
     <div class='content-narrow flex-v flex-column align'>
         <div class='dist'>
-            <h1>Hi! I am Max. I ...</h1>
+            <h1>404 Error</h1>
+            <h3>This site does not exist </h3>
         </div>
-        
-        <div class='dist'>
-            <div class='heart'></div>
-        </div>
-
-        <div class='button-wrapper'>
-        <router-link :to="'foto'">
-            <div class="boldButton dist foto"><h3>Fotografie</h3></div>
-        </router-link>
-
-        <router-link :to="'dataViz'">
-            <div class="boldButton dist data"><h3>Data Viz</h3></div>
-        </router-link>
-        </div>
-    </div>
+      </div>
 </div>
 </template>
 
 <script>
 export default {
-  name: "home",
+  name: "pageNotFound",
   components: {},
 };
 </script>
@@ -40,7 +27,6 @@ a {
 
 h1, h3 {
   margin: 0 auto;
-  text-align: center;
 }
 
 /* class styles */ 

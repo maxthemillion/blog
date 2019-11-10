@@ -1,11 +1,15 @@
 <template>
   <div>
-  <div class="sticky wrapper flex-h-v" v-if="!isTagSelected() || !isCatSelected()">
-      <div v-if="!isTagSelected()" class='tag tag-normal'>tag-filtering active:</div>
-      <div v-if="!isTagSelected()" class="tag tag-highlight" @click="resetTagSelection()">{{'#'+this.tagSelected + ' x'}}</div>
-      <div v-if="!isCatSelected()" class='tag tag-normal'>category-filtering active:</div>
-      <div v-if="!isCatSelected()" class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
-  </div>  
+  <div class="sticky wrapper flex-v flex-column" v-if="!isTagSelected() || !isCatSelected()">
+    <div v-if="!isTagSelected()" class='flex-h filter-row'>
+      <div class='tag tag-normal'>tag filter:</div>
+      <div class="tag tag-highlight" @click="resetTagSelection()">{{'#'+this.tagSelected + ' x'}}</div>
+    </div>
+  <div v-if="!isCatSelected()" :style="{background: getCatColor(catSelected)}" class='flex-h filter-row'>
+      <div class='tag tag-normal'>category filter:</div>
+      <div  class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
+  </div> 
+</div>  
 
   <div class="wrapper flex-h">
     <div class="content">
@@ -16,14 +20,14 @@
             <div class="cat" :style="{background: getCatColor(entry.cat)}" @click="setCatSelected(entry.cat)">
             </div>
             <div class="entry">
-              <h3>
+              <h3 class="entry-title">
                 <router-link :to="{name: entry.id}">
                   {{entry.title}}
                 </router-link>
               </h3>
-              <div class="flex-h-v">
+              <div class="entry-subtitle flex-h flex-wrap">
                 <div class="date">{{entry.date}}</div>
-                  <div class="tags">
+                  <div class="tags flex-h-v flex-wrap">
                     <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
                       {{'#'+tag}}
                     </div>
@@ -136,13 +140,17 @@ h3 {
 }
 
 .date {
-  font-size: 0.8em;
   font-weight: 500;
   text-align: left;
 }
 
 .entry {
   margin: 1em 0;
+}
+
+.entry-subtitle{
+  justify-content: space-between;
+  width: 100%;
 }
 
 .entry-desc {
@@ -158,6 +166,11 @@ h3 {
 .entry-wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.filter-row {
+  padding: 0.25em 0;
+  width:100%;
 }
 
 .img-preview {
@@ -176,22 +189,18 @@ h3 {
 .sticky {
   position: sticky;
   top: 3em;
-  background: antiquewhite;
-  height: 1.5em;
+  background-color: #f1f1f1;
 }
 
 .tags {
-  margin: 0 1em;
-  display: flex;
   justify-content: left;
-  flex-wrap: wrap;
 }
 
 .tag {
   padding: 0 0.5em;
   height: 1.3em;
   border-radius: 0.4em;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-style: italic;
   margin: 0 0.5em 0 0;
   cursor: pointer;
