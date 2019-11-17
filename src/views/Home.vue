@@ -6,12 +6,14 @@
         </div>
         
         <div class='button-wrapper'>
-        <router-link :to="'foto'">
+        <router-link :to="{name: 'blog', params: {catSelected: 'foto'}}">
             <div class="boldButton dist foto">Hochzeitsfotograf</div>
+            <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
         </router-link>
 
-        <router-link :to="'dataViz'">
+        <router-link :to="{name: 'blog', params: {catSelected: 'dataViz'}}">
             <div class="boldButton dist data">DataViz Expert</div>
+            <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(dataViz)+')'}"></div>
         </router-link>
         </div>
     </div>
@@ -22,6 +24,18 @@
 export default {
   name: "home",
   components: {},
+  data(){
+    return{
+      dataViz: 'opener_dataViz.png',
+      foto: 'opener_foto.jpg'
+    }
+  },
+  methods :{
+    getImgUrl(image) {
+        var images = require.context('@/assets/opener/', false, /\.(jpg|png)$/)
+        return images('./' + image)
+      }
+   }
 };
 </script>
 
@@ -45,9 +59,10 @@ a {
 
 .boldButton {
   width: 100%;
-  border-radius:5px;
+  border-radius:5px 5px 0 0;
   text-align: center;
   color: white;
+  line-height: 1.35em;
 }
 
 .button-wrapper{
@@ -61,17 +76,20 @@ a {
   background: #0000c9;
 }
 
-.dist{
-  line-height: 2em;
-  margin: 4px 0;
-}
-
 .foto {
   background: #00dbc2;
 }
 
+.teaserImage{
+  height:200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 0.35em;
+  border-radius: 0 0 5px 5px;
+}
+
 .wrapper{
-    height: 20vh;
     min-height:300px;
 }
 </style>
