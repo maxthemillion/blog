@@ -29,7 +29,7 @@ export default {
           catSelected: "dataViz"
         },
         {
-          label: 'about', 
+          label: 'about & kontakt', 
           to:'about'
         } 
       ]

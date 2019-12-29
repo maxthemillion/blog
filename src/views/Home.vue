@@ -1,7 +1,9 @@
 <template>
 <div class='wrapper flex-h'>
-    <div class='content-narrow flex-v flex-column'>
+    <div class='content-narrow flex-h-v flex-column'>
         <div class='opener'>
+            <b>Hi!</b>
+            </br>
             Ich heiße Max. Ich bin...
         </div>
         
@@ -53,7 +55,7 @@ a {
   font-family:'Raleway', 'Verdana', 'ArialLight', sans-serif;
   font-size: 1.75em;
   margin: 1em 0;
-  font-weight:200;
+  font-weight:400;
   text-align: center;
 }
 
@@ -91,6 +93,7 @@ a {
 
 .wrapper{
     min-height:300px;
+    margin-bottom: 2em;
 }
 </style>
 

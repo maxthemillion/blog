@@ -161,6 +161,7 @@ h3 {
   border: #d3d3d34d 1px solid;
   border-radius: 0 0px 5px 5px;
   background: #d3d3d317;
+  line-height:1.5;
 }
 
 .entry-wrapper {
