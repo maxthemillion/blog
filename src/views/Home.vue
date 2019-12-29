@@ -3,7 +3,7 @@
     <div class='content-narrow flex-h-v flex-column'>
         <div class='opener'>
             <b>Hi!</b>
-            </br>
+            <br>
             Ich heiße Max. Ich bin...
         </div>
         
