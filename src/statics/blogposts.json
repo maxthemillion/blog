@@ -1,6 +1,23 @@
 {
     "2019": [
         {
+            "id": "d3VueComponent",
+            "date": "29. December 2019",
+            "title": "Reusable Chart Components",
+            "description": "D3.js is a fascinating set of tools for interactive data visualization to which I have been coming back almost a thousand times since I first discovered it. However, it requires to fully specify each feature of the charts you want to build. Combine D3 with a frontend technology like Vue.js and start to make use of its endless capabilities in an efficient manner!",
+            "ts": [
+                "D3.js",
+                "Vue.js",
+                "line chart",
+                "reusable",
+                "interactive"
+            ],
+            "cat": "dataViz",
+            "images": [
+                "2019_d3VueComponent.png"
+            ]
+        },
+        {
             "id": "horizonChart",
             "date": "05. November 2019",
             "title": "Horizon Charts",
