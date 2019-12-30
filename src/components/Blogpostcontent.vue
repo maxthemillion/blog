@@ -4,7 +4,7 @@
             <router-view />
         </div>
 
-        <div class="gallery">
+        <div v-if="showGallery" class="gallery">
             <Gallery v-bind:images="images"/>
         </div>
     </div>
@@ -18,8 +18,8 @@ export default {
   name: "Blogpostcontent",
   props: {
     images: Array,
-    mdPath: String
-  },
+    showGallery: Boolean
+    },
   data() {
     return {
       content: null,

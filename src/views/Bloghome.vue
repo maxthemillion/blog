@@ -16,8 +16,8 @@
         <div v-for="(section, index) in Object.keys(entries).sort(function ( a, b ) { return b - a; })" :key="index" class="group">
           <h2 class="center">{{section}}</h2>
           <div v-for="entry in entries[section]" :key="entry.id">
-            <div class="entry-wrapper" v-if="display(entry.ts, entry.cat)">
-              <div class="cat" :style="{background: getCatColor(entry.cat)}" @click="setCatSelected(entry.cat)">
+            <div class="entry-wrapper" v-if="display(entry.tags, entry.category)">
+              <div class="cat" :style="{background: getCatColor(entry.category)}" @click="setCatSelected(entry.cat)">
               </div>
               <div class="entry">
                 <h3 class="entry-title">
@@ -28,7 +28,7 @@
                 <div class="entry-subtitle flex-h flex-wrap">
                   <div class="date">{{entry.date}}</div>
                     <div class="tags flex-h-v flex-wrap">
-                      <div class="tag tag-normal" v-for="(tag, index) in entry.ts" :key="index" @click="setTagSelected(tag)">
+                      <div class="tag tag-normal" v-for="(tag, index) in entry.tags" :key="index" @click="setTagSelected(tag)">
                         {{'#'+tag}}
                       </div>
                     </div>

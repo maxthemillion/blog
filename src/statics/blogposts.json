@@ -5,45 +5,49 @@
             "date": "29. December 2019",
             "title": "Reusable Chart Components",
             "description": "D3.js is a fascinating set of tools for interactive data visualization to which I have been coming back almost a thousand times since I first discovered it. However, it requires to fully specify each feature of the charts you want to build. Combine D3 with a frontend technology like Vue.js and start to make use of its endless capabilities in an efficient manner!",
-            "ts": [
+            "tags": [
                 "D3.js",
                 "Vue.js",
                 "line chart",
-                "reusable",
-                "interactive"
+                "interactive",
+                "time series"
             ],
-            "cat": "dataViz",
+            "category": "dataViz",
             "images": [
                 "2019_d3VueComponent.png"
-            ]
+            ],
+            "showGallery": false
         },
         {
             "id": "horizonChart",
             "date": "05. November 2019",
             "title": "Horizon Charts",
             "description": "Welcome to the new Data Viz category on my blog. As data visualization and analysis has - next to photography - become one of my key interests, I am going to post everything that I come across and that relates to the topic here. So let's jump right in! First Episode: Spaghetti vs. horizon charts!",
-            "ts": [
+            "tags": [
                 "altair",
+                "python",
                 "horizon chart",
                 "time series"
             ],
-            "cat": "dataViz",
+            "category": "dataViz",
             "images": [
                 "2019_horizonChart.png"
-            ]
+            ],
+            "showGallery": false
         },
         {
             "id": "ratschlaege",
             "date": "17. November 2019",
             "title": "Ratschläge",
             "description": "Je näher das Durchschnittsalter in meinem Freundeskreis an die 30-Jahr-Marke heranrückt, desto öfters kommen wir auf Arbeit, Kinder und natürlich Hochzeiten zu sprechen. Ich merke dabei oft, dass sich junge Paare bei den Hochzeitsvorbereitungen schnell im Informationschaos von Hochzeitsmessen und 'Wedding-Ratgebern' im Internet verlieren ...",
-            "ts": [
+            "tags": [
                 "hochzeit",
                 "vorbereitung",
                 "best practice"
             ],
-            "cat": "foto",
-            "images":[]
+            "category": "foto",
+            "images":[],
+            "showGallery": true
         }
     ]
 }

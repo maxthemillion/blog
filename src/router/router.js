@@ -17,6 +17,7 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
     component: () => import('@/components/Blogpostcontent.vue'),
     props:{
       images: child.images,
+      showGallery: child.showGallery
     },
     children:[
       {
