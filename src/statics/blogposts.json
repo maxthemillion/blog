@@ -1,6 +1,24 @@
 {
     "2019": [
         {
+            "id": "NetworkViz",
+            "date": "30. December 2019",
+            "title": "Visualizing Communication Networks",
+            "description": "I'd like to close the year with something that I am particularly proud of: An interactive visualization to explore the evolvement of GitHub communication networks. Written with D3.js and Vue.js this personal project is the first major case where I used those two libraries to combine multiple charts and interactivity in a single view.",
+            "tags": [
+                "D3.js",
+                "Vue.js",
+                "networks",
+                "interactive",
+                "time series"
+            ],
+            "category": "dataViz",
+            "images": [
+                "2019_NetworkViz.png"
+            ],
+            "showGallery": false
+        },
+        {
             "id": "d3VueComponent",
             "date": "29. December 2019",
             "title": "Reusable Chart Components",

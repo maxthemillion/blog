@@ -8,14 +8,14 @@
         </div>
         
         <div class='button-wrapper'>
-        <router-link :to="{name: 'blog', params: {catSelected: 'foto'}}">
-            <div class="boldButton dist foto">Hochzeitsfotograf</div>
-            <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
-        </router-link>
-
         <router-link :to="{name: 'blog', params: {catSelected: 'dataViz'}}">
             <div class="boldButton dist data">DataViz Expert</div>
             <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(dataViz)+')'}"></div>
+        </router-link>
+
+        <router-link :to="{name: 'blog', params: {catSelected: 'foto'}}">
+            <div class="boldButton dist foto">Hochzeitsfotograf</div>
+            <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
         </router-link>
         </div>
     </div>

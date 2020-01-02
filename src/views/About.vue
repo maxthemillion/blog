@@ -4,8 +4,8 @@
             <div class="opener">
                 <p>There's more to come soon!</p> 
                 <p>If you'd like to contact me in the meantime, send a mail to 
-                <a href="mailto:max@maxrahn.eu">max@maxrahn.eu</a> or say hi on 
-                <a href="https://www.linkedin.com/in/maximilian-rahn-21132311b">LinkedIn.</a></p>
+                <a href="mailto:max@maxrahn.eu">max@maxrahn.eu</a>, say hi on 
+                <a href="https://www.linkedin.com/in/maximilian-rahn-21132311b">LinkedIn</a> or visit me on <a href="https://github.com/maxthemillion/">GitHub</a>.</p>
             </div>
         </div>
     </div>
