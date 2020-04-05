@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="sticky wrapper flex-v flex-column" v-if="!isTagSelected() || !isCatSelected()">
-      <div v-if="!isCatSelected()" :style="{background: getCatColor(catSelected)}" class='flex-h filter-row'>
-          <div class='tag tag-normal'>category filter:</div>
-          <div  class="tag tag-highlight" @click="resetCatSelection()">{{this.catSelected + ' x'}}</div>
-      </div> 
+    <div class="sticky wrapper flex-v flex-column" v-if="!isTagSelected()">
       <div v-if="!isTagSelected()" class='flex-h filter-row'>
         <div class='tag tag-normal'>tag filter:</div>
         <div class="tag tag-highlight" @click="resetTagSelection()">{{'#'+this.tagSelected + ' x'}}</div>
@@ -17,8 +13,6 @@
           <h2 class="center">{{section}}</h2>
           <div v-for="entry in entries[section]" :key="entry.id">
             <div class="entry-wrapper" v-if="display(entry.tags, entry.category)">
-              <div class="cat" :style="{background: getCatColor(entry.category)}" @click="setCatSelected(entry.cat)">
-              </div>
               <div class="entry">
                 <h3 class="entry-title">
                   <router-link :to="{name: entry.id}">
@@ -59,25 +53,15 @@
 import BLOGENTRIES from "@/statics/blogposts.json";
 export default {
   name: "bloghome",
-  props: {
-      catSelected: String,
-  },
   data: function() {
     return {
       tagSelected: "",
-      colorDict: {
-        foto: "#00dbc2",
-        dataViz: "#0000c9"
-      },
       imageURLs: null
     };
   },
   methods: {
     setTagSelected(selection) {
       this.tagSelected = selection;
-    },
-    setCatSelected(selection) {
-      this.catSelected = selection;
     },
     display(tags, cat) {
       if (
@@ -94,17 +78,8 @@ export default {
     isTagSelected() {
       return !this.tagSelected;
     },
-    isCatSelected() {
-      return !this.catSelected;
-    },
     resetTagSelection() {
       this.tagSelected = "";
-    },
-    resetCatSelection() {
-      this.catSelected = "";
-    },
-    getCatColor(cat) {
-      return this.colorDict[cat];
     },
     getImgUrl(image) {
       if (this.isImageDefined(image)) {
@@ -127,13 +102,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss' scoped>
 
-.cat {
-  margin-right: 1rem;
-  flex: 0 0 4px;
-  cursor: pointer;
-  border-bottom: 1em solid white;
-}
-
 .date {
   font-weight: 500;
   text-align: left;
@@ -141,7 +109,7 @@ export default {
 }
 
 .entry {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .entry-title{
