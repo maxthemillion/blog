@@ -125,15 +125,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-h3 {
-  margin: 0;
-}
-
+<style lang='scss' scoped>
 
 .cat {
-  margin-right: 1em;
+  margin-right: 1rem;
   flex: 0 0 4px;
   cursor: pointer;
   border-bottom: 1em solid white;
@@ -142,10 +137,15 @@ h3 {
 .date {
   font-weight: 500;
   text-align: left;
+  font-size:$psize;
 }
 
 .entry {
-  margin: 1em 0;
+  margin: 1rem 0;
+}
+
+.entry-title{
+    margin: 0;
 }
 
 .entry-subtitle{
@@ -162,6 +162,7 @@ h3 {
   border-radius: 0 0px 5px 5px;
   background: #d3d3d317;
   line-height:1.5;
+  font-size:$psize;
 }
 
 .entry-wrapper {
@@ -198,12 +199,12 @@ h3 {
 }
 
 .tag {
-  padding: 0 0.5em;
-  height: 1.3em;
-  border-radius: 0.4em;
-  font-size: 0.8em;
+  padding: 0 0.5rem;
+  height: $psize*0.9;
+  border-radius: 0.4rem;
+  font-size: $psize*0.8;
   font-style: italic;
-  margin: 0 0.5em 0 0;
+  margin: 0 0.5rem 0 0;
   cursor: pointer;
   background: white;
 }
@@ -217,8 +218,8 @@ h3 {
 }
 
 .tag-highlight {
-  border: 1px solid #0e84ff;
-  color: #0e84ff;
+  border: 1px solid $color-primary;
+  color: $color-primary;
 }
 
 #content-wrapper {

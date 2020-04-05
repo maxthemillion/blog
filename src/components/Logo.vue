@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
     #logo{
         max-width:100px;
         max-height:100px;

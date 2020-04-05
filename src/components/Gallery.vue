@@ -42,7 +42,7 @@
   }
 </script> 
  
-<style scoped>
+<style lang='scss' scoped>
 .image {
   background-size: cover;
   background-repeat: no-repeat;

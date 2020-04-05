@@ -2,20 +2,16 @@
 <div class='wrapper flex-h'>
     <div class='content-narrow flex-h-v flex-column'>
         <div class='opener'>
-            <b>Hi!</b>
+            <b>MAX RAHN</b>
             <br>
-            Ich heiße Max. Ich bin...
+            <p>Currently supporting customers with <span class='text-highlight'>advanced data analytics</span> and <span class='text-highlight'>visualization</span> as data consultant at msg systems.</p>
         </div>
         
+        <visitbar />
+
         <div class='button-wrapper'>
         <router-link :to="{name: 'blog', params: {catSelected: 'dataViz'}}">
-            <div class="boldButton dist data">DataViz Expert</div>
             <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(dataViz)+')'}"></div>
-        </router-link>
-
-        <router-link :to="{name: 'blog', params: {catSelected: 'foto'}}">
-            <div class="boldButton dist foto">Hochzeitsfotograf</div>
-            <div class="teaserImage" :style="{backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
         </router-link>
         </div>
     </div>
@@ -23,9 +19,13 @@
 </template>
 
 <script>
+import visitbar from '@bit/maxthemillion.max-ci.visit-bar'
+
 export default {
   name: "home",
-  components: {},
+  components: {
+    visitbar
+  },
   data(){
     return{
       dataViz: 'opener_dataViz.png',
@@ -42,7 +42,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang='scss' scoped>
 /* html tag styles */
 
 a {
@@ -70,7 +70,7 @@ a {
 .button-wrapper{
   font-family:'Raleway';
   width:100%;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 
@@ -88,12 +88,12 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   margin-bottom: 0.35em;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
 }
 
-.wrapper{
-    min-height:300px;
-    margin-bottom: 2em;
+.text-highlight{
+  color:#0e84ff;
 }
+
 </style>
 

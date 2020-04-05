@@ -32,5 +32,9 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang='scss' scoped>
+.tag{
+  font-size: $psize*0.8;
+}
+
 </style>

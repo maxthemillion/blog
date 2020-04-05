@@ -38,10 +38,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
   .navbutton{
     float:left;
-    margin: 0 1em;
+    margin: 0 2rem;
+    font-size: $psize;
   }
 
   .sticky{
@@ -49,7 +50,7 @@ export default {
     }
 
   .wrapper{
-    height: 3em;
+    height: 3rem;
     background:#f1f1f1;
   }
 </style>
