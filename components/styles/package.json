@@ -1,11 +1,9 @@
 {
-  "name": "@bit/maxthemillion.max-ci.visit-bar",
-  "version": "0.0.3",
-  "homepage": "https://bit.dev/maxthemillion/max-ci/visit-bar",
-  "main": "dist/VisitBar.vue",
-  "dependencies": {
-    "@bit/maxthemillion.d3charts.styles": "file:../styles"
-  },
+  "name": "@bit/maxthemillion.d3charts.styles",
+  "version": "0.0.5",
+  "homepage": "https://bit.dev/maxthemillion/d3charts/styles",
+  "main": "dist/baseStyles.scss",
+  "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {},
   "license": "SEE LICENSE IN LICENSE",
@@ -69,6 +67,5 @@
         }
       }
     }
-  },
-  "browser": "visit-bar.umd.js"
+  }
 }

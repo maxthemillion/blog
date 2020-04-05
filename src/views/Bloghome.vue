@@ -163,6 +163,7 @@ export default {
   background: #d3d3d317;
   line-height:1.5;
   font-size:$psize;
+  font-weight:$pweight;
 }
 
 .entry-wrapper {
@@ -204,6 +205,7 @@ export default {
   border-radius: 0.4rem;
   font-size: $psize*0.8;
   font-style: italic;
+  font-weight: $pweight;
   margin: 0 0.5rem 0 0;
   cursor: pointer;
   background: white;

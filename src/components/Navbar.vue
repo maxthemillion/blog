@@ -18,18 +18,13 @@ export default {
           label: "home",
           to: "home"
         },
-        {
-          label: 'foto',
-          to:'blog',
-          catSelected: "foto"
-        },
         { 
-          label: 'data viz', 
+          label: 'blog', 
           to:'blog',
           catSelected: "dataViz"
         },
         {
-          label: 'about & kontakt', 
+          label: 'about', 
           to:'about'
         } 
       ]
@@ -43,6 +38,7 @@ export default {
     float:left;
     margin: 0 2rem;
     font-size: $psize;
+    font-weight: $pweight;
   }
 
   .sticky{

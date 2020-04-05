@@ -35,6 +35,7 @@ export default {
 <style lang='scss' scoped>
 .tag{
   font-size: $psize*0.8;
+  font-weight: $pweight;
 }
 
 </style>

@@ -20,7 +20,8 @@
     "vega-lite": "^4.9.0",
     "vue": "^2.6.11",
     "vue-gallery": "^2.0.1",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.1.6",
+    "@bit/maxthemillion.d3charts.styles": "file:./components/styles"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.3.0",

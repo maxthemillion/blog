@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper flex-h-v">
-    <div class="footer-element">
+  <div class="visit-bar-wrapper">
+    <div class="visit-elem">
       <a href="https://github.com/maxthemillion">
         <div class="icon-wrapper flex-h">
           <div class="icon" id="github"></div>
@@ -9,7 +9,7 @@
       </a>
     </div>
 
-    <div class="footer-element">
+    <div class="visit-elem">
       <a href="https//www.maxrahn.eu">
         <div class="icon-wrapper flex-h">
           <div class="icon" id="max"></div>
@@ -18,7 +18,7 @@
       </a>
     </div>
 
-    <div class="footer-element">
+    <div class="visit-elem">
       <a href="https://t.me/maxthemillion">
         <div class="icon-wrapper flex-h">
           <div class="icon" id="telegram"></div>
@@ -27,7 +27,7 @@
       </a>
     </div>
 
-    <div class="footer-element">
+    <div class="visit-elem">
       <a href="www.linkedin.com/in/maximilian-rahn-21132311b">
         <div class="icon-wrapper flex-h">
           <div class="icon" id="linkedin"></div>
@@ -87,26 +87,21 @@ export default {
 
 .icon-text {
   font-size: $psize * 0.8;
+  font-weight: $pweight;
 }
 
-.wrapper {
-  height: 10vh;
-  min-height: 6em;
-  justify-content: space-around;
+.visit-bar-wrapper {
   width: 100%;
-}
-
-.footer-element {
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.flex-h-v {
-  display: inline-flex;
+    display: inline-flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.visit-elem {
+  flex-basis: 0;
+  text-align: center;
+  margin: 0.3rem;
 }
 
 </style>
