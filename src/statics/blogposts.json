@@ -1,4 +1,24 @@
 {
+    
+    "2020":[
+        {
+            "id": "Ideation",
+            "date": "01 February 2020",
+            "title": "A glimpse at my creative process",
+            "description": "I love to explore new tools and techniques for my data visualization workflow. In particular I love to connect thoughts from different domains to improve my workflow or create new things from them. For me, combining existing concepts to new ideas is my preferred form of creativity.",
+            "tags": [
+                "design thinking",
+                "tools",
+                "prototyping",
+                "Procreate"
+            ],
+            "category": "dataViz",
+            "images": [
+                "2020_BarChart.png", "2020_SlopeChart.png","2020_LineGraph.png"
+            ],
+            "showGallery": true
+        }
+    ],
     "2019": [
         {
             "id": "NetworkViz",

@@ -15,7 +15,7 @@
 
         <router-link :to="{name: 'blog', params: {catSelected: 'foto'}}">
             <div class="boldButton dist foto">Hochzeitsfotograf</div>
-            <div class="teaserImage" :style="{ backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
+            <div class="teaserImage" :style="{backgroundImage: 'url('+getImgUrl(foto)+')'}"></div>
         </router-link>
         </div>
     </div>
