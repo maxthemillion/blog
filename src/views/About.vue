@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .opener{
   font-family:'Raleway', 'Verdana', 'ArialLight', sans-serif;
   font-size: 1.75em;

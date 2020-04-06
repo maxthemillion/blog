@@ -72,20 +72,6 @@
                 "2019_horizonChart.png"
             ],
             "showGallery": false
-        },
-        {
-            "id": "ratschlaege",
-            "date": "17. November 2019",
-            "title": "Ratschläge",
-            "description": "Je näher das Durchschnittsalter in meinem Freundeskreis an die 30-Jahr-Marke heranrückt, desto öfters kommen wir auf Arbeit, Kinder und natürlich Hochzeiten zu sprechen. Ich merke dabei oft, dass sich junge Paare bei den Hochzeitsvorbereitungen schnell im Informationschaos von Hochzeitsmessen und 'Wedding-Ratgebern' im Internet verlieren ...",
-            "tags": [
-                "hochzeit",
-                "vorbereitung",
-                "best practice"
-            ],
-            "category": "foto",
-            "images":[],
-            "showGallery": true
         }
     ]
 }

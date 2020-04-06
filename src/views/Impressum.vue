@@ -7,3 +7,7 @@ export default {
     name:'Impressum'
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

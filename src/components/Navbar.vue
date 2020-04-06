@@ -18,18 +18,13 @@ export default {
           label: "home",
           to: "home"
         },
-        {
-          label: 'foto',
-          to:'blog',
-          catSelected: "foto"
-        },
         { 
-          label: 'data viz', 
+          label: 'blog', 
           to:'blog',
           catSelected: "dataViz"
         },
         {
-          label: 'about & kontakt', 
+          label: 'about', 
           to:'about'
         } 
       ]
@@ -38,10 +33,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
   .navbutton{
     float:left;
-    margin: 0 1em;
+    margin: 0 2rem;
+    font-size: $psize;
+    font-weight: $pweight;
   }
 
   .sticky{
@@ -49,7 +46,7 @@ export default {
     }
 
   .wrapper{
-    height: 3em;
+    height: 3rem;
     background:#f1f1f1;
   }
 </style>

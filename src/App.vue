@@ -22,7 +22,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss'>
+@import 'src/styles/main.scss';
+
   #app{
     display:flex;
     flex-direction:column;
