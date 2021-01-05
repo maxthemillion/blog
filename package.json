@@ -10,7 +10,7 @@
   "dependencies": {
     "@bit/maxthemillion.max-ci.visit-bar": "file:./components/visit-bar",
     "@jeremyhamm/vue-slider": "^0.1.16",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.4",
     "file-loader": "^4.3.0",
     "require-context": "^1.1.0",
