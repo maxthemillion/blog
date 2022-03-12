@@ -14,64 +14,9 @@
             ],
             "category": "dataViz",
             "images": [
-                "2020_BarChart.png", "2020_SlopeChart.png","2020_LineGraph.png"
+                "2020_BarChart.jpg"
             ],
             "showGallery": true
-        }
-    ],
-    "2019": [
-        {
-            "id": "NetworkViz",
-            "date": "30. December 2019",
-            "title": "Visualizing Communication Networks",
-            "description": "I'd like to close the year with something that I am particularly proud of: An interactive visualization to explore the evolvement of GitHub communication networks. Written with D3.js and Vue.js this personal project is the first major case where I used those two libraries to combine multiple charts and interactivity in a single view.",
-            "tags": [
-                "D3.js",
-                "Vue.js",
-                "networks",
-                "interactive",
-                "time series"
-            ],
-            "category": "dataViz",
-            "images": [
-                "2019_NetworkViz.png"
-            ],
-            "showGallery": false
-        },
-        {
-            "id": "d3VueComponent",
-            "date": "29. December 2019",
-            "title": "Reusable Chart Components",
-            "description": "D3.js is a fascinating set of tools for interactive data visualization to which I have been coming back almost a thousand times since I first discovered it. However, it requires to fully specify each feature of the charts you want to build. Combine D3 with a frontend technology like Vue.js and start to make use of its endless capabilities in an efficient manner!",
-            "tags": [
-                "D3.js",
-                "Vue.js",
-                "line chart",
-                "interactive",
-                "time series"
-            ],
-            "category": "dataViz",
-            "images": [
-                "2019_d3VueComponent.png"
-            ],
-            "showGallery": false
-        },
-        {
-            "id": "horizonChart",
-            "date": "05. November 2019",
-            "title": "Horizon Charts",
-            "description": "Welcome to the new Data Viz category on my blog. As data visualization and analysis has - next to photography - become one of my key interests, I am going to post everything that I come across and that relates to the topic here. So let's jump right in! First Episode: Spaghetti vs. horizon charts!",
-            "tags": [
-                "altair",
-                "python",
-                "horizon chart",
-                "time series"
-            ],
-            "category": "dataViz",
-            "images": [
-                "2019_horizonChart.png"
-            ],
-            "showGallery": false
         }
     ]
 }

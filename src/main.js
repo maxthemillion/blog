@@ -1,14 +1,11 @@
 import vegaEmbed from 'vega-embed'
-import Vue from 'vue'
+import * as Vue from 'vue'
 import App from './App.vue'
 import router from './router/router.js'
 import Slider from '@jeremyhamm/vue-slider'
 
-Vue.use(Slider)
-Vue.config.productionTip = false
+const app = Vue.createApp(App)
+app.use(Slider)
+app.use(router)
 
-new Vue({
-  router,
-  vegaEmbed,
-  render: h => h(App),
-}).$mount('#app')
+app.mount('#app')

@@ -3,7 +3,7 @@ module.exports = {
     rules: [
       {
         test: /\.md$/,
-        loader: 'vue-markdown-loader'
+        loader: 'vue-md-loader'
       }
     ]
   },
