@@ -11,7 +11,7 @@
     "@bit/maxthemillion.d3charts.styles": "file:./components/styles",
     "@bit/maxthemillion.max-ci.visit-bar": "file:./components/visit-bar",
     "@jeremyhamm/vue-slider": "^0.2.0",
-    "@vue/cli-service": "^5.0.1",
+    "@vue/cli-service": "^5.0.8",
     "vega-embed": "^6.20.8",
     "vue": "^3.2.31",
     "vue-gallery": "^2.0.1",
